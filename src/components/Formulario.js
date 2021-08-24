@@ -1,9 +1,35 @@
-import React from 'react';
+import React from "react";
 
 const Formulario = () => {
-    return ( 
-        <h2>Formulario</h2>
-     );
-}
- 
+  return (
+    <form className="col-12">
+      <fieldset className="text-center">
+        <legend>Find drinks by category or ingredient</legend>
+      </fieldset>
+      <div className="row mt-4">
+        <div className="col-md-4">
+          <input
+            name="nombre"
+            className="form-control"
+            type="text"
+            placeholder="Find by ingredient"
+          />
+        </div>
+        <div className="col-md-4">
+          <select name="categoria" className="form-control">
+            <option value="">--Select Category--</option>
+          </select>
+        </div>
+        <div className="col-md-4">
+        <input
+            className="btn btn-block btn-primary"
+            type="submit"
+            value="Go for a drink!"
+          />
+        </div>
+      </div>
+    </form>
+  );
+};
+
 export default Formulario;

@@ -9,11 +9,17 @@ body {
   min-height: 100%;
 }
 header {
-  background-color: #ec3a49;
+  background-color: rgb(60, 60, 60);
   color: white;
   padding: 5rem 0;
 }
 h1 {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3rem;
+}
+h6 {
   color: white;
   font-weight: 900;
   text-align: center;

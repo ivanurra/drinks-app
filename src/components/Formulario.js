@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import {CategoriasContext} from '../context/CategoriaContext'
 
 const Formulario = () => {
+
+  const { test } = useContext(CategoriasContext);
+
   return (
     <form className="col-12">
       <fieldset className="text-center">
@@ -21,7 +25,7 @@ const Formulario = () => {
           </select>
         </div>
         <div className="col-md-4">
-        <input
+          <input
             className="btn btn-block btn-primary"
             type="submit"
             value="Go for a drink!"

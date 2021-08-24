@@ -2,4 +2,4 @@
 
 ![Screenshot](public/drinks.jpg)
 
-API: https://www.thecocktaildb.com/
+API: https://www.thecocktaildb.com/api.php

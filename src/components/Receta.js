@@ -5,7 +5,7 @@ const Receta = ({ receta }) => {
 
     // Extraemos los valores del context
 
-    const {guardarIdReceta} 
+    const {guardarIdReceta} = useContext(ModalContext);
   return (
     <div className="col-md-4 mb-3">
       <div className="card">

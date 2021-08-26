@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import { ModalContext } from "../context/ModalContext";
 
 const Receta = ({ receta }) => {
+
+    // Extraemos los valores del context
+
+    const {guardarIdReceta} 
   return (
     <div className="col-md-4 mb-3">
       <div className="card">
@@ -9,7 +14,9 @@ const Receta = ({ receta }) => {
         </h2>
         <img className="card-img-top" src={receta.strDrinkThumb} alt={`${receta.strDrink}`} />
         <div className="card-body">
-            <button type="button" className="btn btn-block btn-secondary">
+            <button type="button" className="btn btn-block btn-secondary" onClick={() => {
+                guardarIdReceta(receta.idDrink)
+            }}>
                 Go to recipe
             </button>
         </div>

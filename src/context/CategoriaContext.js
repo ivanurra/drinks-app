@@ -5,7 +5,6 @@ import React, { createContext, useState, useEffect } from "react";
 export const CategoriasContext = createContext();
 
 // Provider, donde se encuentran las funciones y el State.
-
 const CategoriasProvider = (props) => {
   // Crear el STATE del Context
   const [categorias, guardarCategorias] = useState([]);

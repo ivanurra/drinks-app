@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 import ListaRecetas from "./components/ListaRecetas";
